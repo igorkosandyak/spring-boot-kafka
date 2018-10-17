@@ -19,8 +19,6 @@ public class Consumer {
 
     @KafkaListener(topics = "users", groupId = "group_id")
     public void consume(String message) throws IOException {
-        User user = mapper.readValue(message, User.class);
-        logger.info(String.format("#### -> Consumed message -> %s", user));
+        logger.info(String.format("#### -> Consumed message -> %s", message));
     }
-
 }

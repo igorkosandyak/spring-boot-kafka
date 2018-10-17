@@ -14,11 +14,10 @@ public class Producer {
     private static final String TOPIC = "users";
 
     @Autowired
-    private KafkaTemplate<String, User> kafkaTemplate;
+    private KafkaTemplate<String, String> kafkaTemplate;
 
     public void sendMessage(String message) {
-        User user = new User(message, new Random().nextInt(100));
         logger.info(String.format("#### -> Producing message -> %s", message));
-        this.kafkaTemplate.send(TOPIC, user);
+        this.kafkaTemplate.send(TOPIC, message);
     }
 }
