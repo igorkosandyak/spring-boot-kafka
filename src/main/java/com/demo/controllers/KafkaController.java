@@ -1,6 +1,6 @@
-package com.kafka.controllers;
+package com.demo.controllers;
 
-import com.kafka.engine.Producer;
+import com.demo.engine.Producer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

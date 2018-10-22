@@ -6,9 +6,9 @@ spring:
       bootstrap: localhost:9092
       group-id: group_id
       auto-offset-reset: earliest
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      key-deserializer: org.apache.demo.common.serialization.StringDeserializer
+      value-deserializer: org.apache.demo.common.serialization.StringDeserializer
     producer:
       bootstrap: localhost:9092
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      key-serializer: org.apache.demo.common.serialization.StringSerializer
+      value-serializer: org.apache.demo.common.serialization.StringSerializer

@@ -1,4 +1,4 @@
-package com.kafka;
+package com.demo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
