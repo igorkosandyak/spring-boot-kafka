@@ -10,7 +10,7 @@ import java.io.IOException;
 @Service
 public class Consumer {
 
-    private final Logger logger = LoggerFactory.getLogger(Producer.class);
+    private final Logger logger = LoggerFactory.getLogger(Consumer.class);
 
     @KafkaListener(topics = "users", groupId = "group_id")
     public void consume(String message) throws IOException {
