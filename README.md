@@ -1,8 +1,10 @@
 # spring-boot-kafka
 Simple Spring Boot demo project with Apache Kafka
 
+Information
+https://www.confluent.io/blog/apache-kafka-spring-boot-application/
 
-Detail infomration on Apache Kafka and Kafka setup to run this applicaton.
+Detail information on Apache Kafka and Kafka setup to run this applicaton.
 https://javatechonline.com/how-to-work-with-apache-kafka-in-spring-boot/
 
 
@@ -15,4 +17,6 @@ How to test the Application?
 4. create kafka topic "users"
 5. Run spring boot application
 6. Invoke API
+
+curl -X POST -F "message=test" http://localhost:9000/kafka/publish
 
